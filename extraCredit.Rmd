@@ -1,0 +1,74 @@
+---
+title: "MAE 158 Extra Credit"
+output: html_notebook
+---
+
+By Sam Hince
+ID: 19295309
+03/02/2021
+
+Directions:
+
+The main project involves developing a tool (code) to calculate aircraft performance given
+information about the aircraft geometry and flight mission requirements. The plots should be
+digitized, and the code should be able to run without needing supplemental inputs from the
+charts, from the user.
+
+You need to develop the ability for calculate performance of the aircraft at any airspeed. You
+will need to be able to generate plots of ‘Thrust required versus airspeed’, ‘Power required
+versus airspeed’, and ‘L/D versus airspeed’. The following page shows and example of the
+charts.
+
+For the aircraft you will be given:
+
++ Wing geometry
+  - Sweep
+  - Thickness
+  - Span
++ Fuselage geometry
+  - Length
+  - Diameter
+  - Wetted area
++ Tail geometry
+  - Similar to wing
++ Additional drag contributions
+  - Additional flat-plate drag area
+
+You should be able to calculate:
++ Total Drag (at any airspeed)
++ Induced Drag
+  - Coefficient of induced drag
++ Parasitic Drag
+  - Flat-plate drag area
+  - Coefficient of parasitic drag
+  
+***
+
+Inputs:
+
+```{r}
+# Wing geometry
+wing <- list(sweep = , 
+             thickness = , 
+             span = )
+
+# Fuselage geometry
+fuselage <- list(length = ,
+                 diameter = ,
+                 weetted_area = )
+  
+# Tail geometry
+tail <- list(sweep = , 
+             thickness = , 
+             span = )
+
+# Additional drag contributions
+added_flat_plate_drag <- 
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
